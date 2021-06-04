@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap 4 Dropdowns within a Navbar</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="static/css/datepicker.css" />
+<link rel="stylesheet" href="static/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap-datepicker.js"></script>
+<style>
+    body{
+      background-image: url('/static/images/img1.jpg');
+      background-repeat: no-repeat;
+       background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a style="margin-right:180px" href="#" class="navbar-brand">Hospital Management System</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a  style="margin-right:180px" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Patient</a>
+                    <div class="dropdown-menu">
+                        <a href="{{ url_for('create') }}" class="dropdown-item">create</a>
+                        <a href="{{ url_for('update') }}" class="dropdown-item">update</a>
+                        <a href="{{ url_for('view') }}" class="dropdown-item">view</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pharmacist</a>
+                    <div class="dropdown-menu">
+                        <a href="{{ url_for('create') }}" class="dropdown-item">issue</a>
+                        <a href="{{ url_for('update') }}" class="dropdown-item">add</a>
+                        <a href="{{ url_for('view') }}" class="dropdown-item">view</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a  style="margin-right:180px" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Diagnostic</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reports</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                    </div>
+                </li>
+                <li class= "nav-item">
+                    <a href="#" class="nav-link">logout</a>              
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+</body>
+</html> 

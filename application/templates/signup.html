@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Signup page</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <style>
+    body{
+  background-image: url('/static/images/img1.jpg');
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+  
+  <div style="margin-bottom:45px;background:rgb(2, 48, 49);text-align:center;">
+    <h1 style="font-family:fantasy;color:white">Hospital management system</h1>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+    </div>
+<div class="col-md-4" style="margin-top:20px;">
+ <div class="card" style=" border: 2px solidrgb(0, 4, 8); border-radius: 0px 0px 10px 10px;">
+  <div class="card-header" style="background: rgb(2, 48, 49);text-align:center;color:white;font-size:20px;font-family:fantasy">Signup Form</div>
+<div class="card-body" style="background:rgb(153, 153, 153)">
+
+<form  action="/signup"method="POST" class="form-group">
+  <div class="form-group" style="font-weight:bold">
+    <label>username</label>
+     <input type="text"  placeholder="Enter Email" name="username" class="form-control" />
+     </div>
+<div class="form-group" style="font-weight:bold">
+    <label>department</label>
+  <input type="email" placeholder="Enter dept" email="email" class="form-control" />
+ </div>
+  <div class="form-group" style="font-weight:bold">
+ <label>password</label>
+  <input type="password" placeholder="Enter password" password="password" class="form-control" />
+  </div>
+ <div class="form-group">
+    <input type="submit" class="btn btn-info" value="signup" />
+</div>
+</form>
+ </div>
+ </div>
+</div>
+ </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hospital management system</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <style>
+  body{
+  background-image: url('/static/images/img1.jpg');
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;
+}
+
+
+</style>
+</head>
+<body>
+
+  <div style="margin-bottom:45px;background:rgb(2, 48, 49);text-align:center;">
+    <h1 style="font-family:fantasy;color:white">Hospital management system</h1>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4" style="margin-top:20px;">
+      <div class="card" style=" border: 2px solidrgb(0, 4, 8);
+  border-radius: 0px 0px 10px 10px;" >
+        <div class="card-header"style="background: rgb(2, 48, 49);text-align:center;color:white;font-size:20px;font-family:fantasy">AdminDesk Login</div>
+        <div class="card-body" style="background:rgb(153, 153, 153)">
+          <form  action="/login"method="POST" class="form-group">
+            <div class="form-group">
+              <label style="font-weight:bold">Email Id</label>
+              <input type="text" name="emailid" placeholder="Enter Email"  class="form-control" />
+              <span id="error_emailid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <label style="font-weight:bold">Password</label>
+              <input type="password" name="password" placeholder="Enter password"  class="form-control" />
+              <span id="error_password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <input type="submit" id="login" style="background:rgb(2, 48, 49);font-weight:bold" class="btn btn-info" value="Login" />
+            </div>
+             <p>
+  		           Not a member? <a href="{{ url_for('signup') }}">Sign Up</a>
+  	        </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

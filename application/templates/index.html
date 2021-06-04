@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hospital Management System</title>
+  <style>
+body{
+  background-image: url('/static/images/img1.jpg');
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  height:55px;
+}
+li a{
+  font-family:fantasy;
+  font-size:20px;
+  display: block;
+  text-align:center;
+  padding: 15px 15px;
+  text-decoration: none;
+  margin-right:20px;
+}
+
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li><a class="nav-link" style="margin-right:400px"href="">Hospital management system</a></li>
+      <li class="nav-item"style="margin-left:200px" >
+        <a class="nav-link" href="{{ url_for('login') }}">Login</>
+      </li>
+      <li class="nav-item"style="margin-left:60px" >
+        <a class="nav-link" href="{{ url_for('view') }}">create</>
+      </li>
+    </ul>
+  </div> 
+</nav>
+</body>
+</html>
